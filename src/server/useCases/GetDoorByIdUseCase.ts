@@ -7,6 +7,7 @@ import { BuildingRepository } from '@/server/repositories/BuildingRepository';
 import { DoorMapper } from '@/server/mappers/DoorMapper';
 import { ApartmentRepository } from '../repositories/ApartmentRepository';
 
+import { ExtendedDoorMapper } from '@/server/mappers/ЕxtendedDoorMapper';
 interface Context {
   doorId: string;
 }
@@ -41,7 +42,9 @@ export class GetDoorByIdUseCase implements UseCase<Door, Context> {
       doorDto.apartment_id ?? ''
     )
 
-    return this.doorMapper.toDomain(doorDto, {
+    const extendedMapper = new ExtendedDoorMapper(this.doorMapper);
+
+    return extendedMapper.toDomain(doorDto, {
       [buildingDto?.id]: buildingDto,
     }, undefined, apartmentDto);
   }

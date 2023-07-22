@@ -5,7 +5,7 @@ export interface Door {
   id: string;
   name: string;
   buildingName: string;
-  connectionType: ConnectionType;
+  connectionType: ConnectionType; 
   apartmentName: string;
   connectionStatus: ConnectionStatus;
   lastConnectionStatusUpdate: string;
