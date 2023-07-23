@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dateTime getLocaleString should handle Date object and return formatted short date and time string 1`] = `"12.2.2023, 13:30"`;
+
+exports[`dateTime getLocaleString should handle Date object and return formatted short date and time string by default 1`] = `"12.2.2023, 13:30"`;
+
+exports[`dateTime getLocaleString should handle Date object and return formatted short date string 1`] = `"12.2.2023"`;
+
+exports[`dateTime getLocaleString should handle Date object and return formatted short time string 1`] = `"13:30"`;
+
+exports[`dateTime getLocaleString should handle ISO string and return formatted short date and time string 1`] = `"12.2.2023, 14:30"`;

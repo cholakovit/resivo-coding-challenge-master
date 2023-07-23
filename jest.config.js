@@ -12,6 +12,7 @@ const customJestConfig = {
   },
   testEnvironment: 'jest-environment-jsdom',
   restoreMocks: true,
+  snapshotSerializers: ['jest-serializer-html'],
 };
 
 const esModules = ['lodash-es'].join('|');
