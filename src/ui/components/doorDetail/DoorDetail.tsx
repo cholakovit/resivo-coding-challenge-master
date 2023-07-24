@@ -3,8 +3,8 @@ import { Door } from '@/models/Door';
 import { DetailPageContainer } from '@/ui/layout/DetailPageContainer';
 import { DetailPageItem } from '@/ui/layout/DetailPageItem';
 
-import { DateTimeDisplay } from './DateTimeDisplay';
-import { ConnectionStatusComponent } from './ConnectionStatusComponent';
+import { DateTimeDisplay } from "@/ui/components/dateTimeDisplay/DateTimeDisplay";
+import { ConnectionStatusComponent } from "@/ui/components/connectionStatus/ConnectionStatus";
 
 interface DoorDetailProps {
   door: Door;

@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useGetDoorByIdQuery } from '@/ui/apiSlice';
 import { isPageQueryParamString } from '@/ui/lib/isPageQueryParamString';
 import { Layout } from '@/ui/layout/Layout';
-import { DoorDetail } from '@/ui/components/DoorDetail';
+import { DoorDetail } from '@/ui/components/doorDetail/DoorDetail';
 
 export default function DoorDetailPage() {
   const router = useRouter();

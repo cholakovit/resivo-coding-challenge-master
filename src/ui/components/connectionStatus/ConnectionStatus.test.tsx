@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { ConnectionStatusComponent } from './ConnectionStatusComponent';
+import { ConnectionStatusComponent } from './ConnectionStatus';
 import { ConnectionStatus } from '@/models/ConnectionStatus';
 import '@testing-library/jest-dom';
 import 'jest-styled-components'; // Import jest-styled-components for hex color support
